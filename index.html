@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <div class="calculadora">
+        <label for="c"><b>CALCULADORA</b></label>
+        <input type="text" name="c" id="inputCalc"/>
+        <div class="buttons">
+            <button class="number" onclick="buttonClicked('1')">1</button>
+            <button class="number" onclick="buttonClicked('2')">2</button>
+            <button class="number" onclick="buttonClicked('3')">3</button>
+            <button class="op" onclick="buttonClicked('+')">+</button>
+        </div>
+        <div class="buttons">
+            <button class="number" onclick="buttonClicked('4')">4</button>
+            <button class="number" onclick="buttonClicked('5')">5</button>
+            <button class="number" onclick="buttonClicked('6')">6</button>
+            <button class="op" onclick="buttonClicked('-')">-</button>
+        </div>
+        <div class="buttons">
+            <button class="number" onclick="buttonClicked('7')">7</button>
+            <button class="number" onclick="buttonClicked('8')">8</button>
+            <button class="number" onclick="buttonClicked('9')">9</button>
+            <button class="op" onclick="buttonClicked('*')">*</button>
+        </div>
+        <div class="buttons">
+            <button class="number" onclick="buttonClicked('0')">0</button>
+            <button class="dot" onclick="buttonClicked('.')">.</button>
+            <button class="op" onclick="buttonClicked('/')">/</button>
+            <button class="equal" onclick="buttonClicked('=')">=</button>
+        </div>
+    </div>
+    <div class="rain-container" id="rainContainer"></div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
